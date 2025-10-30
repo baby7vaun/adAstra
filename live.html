@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ad Astra — Live</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="discord-widget" class="discord-floating">
+    <iframe src="https://discord.com/widget?id=1349234105300156469&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
+
+  <nav class="navbar small">
+    <div class="brand"><span class="brand-accent">AD</span>ASTRA</div>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bots.html">Bots</a></li>
+      <li><a href="live.html" class="highlight">Live</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="live-main">
+    <header class="live-hero">
+      <h1>🌐 Live from the Ad Astra Universe</h1>
+      <p>Videos, streams, and tracks tagged <code>#adAstra</code> across platforms.</p>
+    </header>
+
+    <section class="live-section youtube">
+      <h2>🎥 YouTube — Recent Videos (#adAstra)</h2>
+      <p class="hint">Auto-updating requires YouTube Data API key — see README for setup.</p>
+      <div id="youtube-grid" class="media-grid">
+        <!-- sample embeds populated by scripts.js -->
+      </div>
+      <div class="more-link"><a href="https://www.youtube.com/results?search_query=%23adAstra" target="_blank">See all #adAstra on YouTube</a></div>
+    </section>
+
+    <section class="live-section soundcloud">
+      <h2>🎧 SoundCloud — Latest Tracks (#adAstra)</h2>
+      <p class="hint">SoundCloud API can be used to auto-populate.</p>
+      <div id="soundcloud-grid" class="media-grid">
+        <!-- sample embeds -->
+      </div>
+      <div class="more-link"><a href="https://soundcloud.com/search?q=%23adAstra" target="_blank">See all #adAstra on SoundCloud</a></div>
+    </section>
+
+    <section class="live-section twitch">
+      <h2>🎮 Twitch / Kick — Live Streams (#adAstra)</h2>
+      <p class="hint">Twitch/Kick APIs required for live auto refreshing.</p>
+      <div id="streams-grid" class="media-grid">
+        <!-- sample stream embeds -->
+      </div>
+      <div class="more-link"><a href="https://www.twitch.tv/search?term=%23adAstra" target="_blank">Search #adAstra on Twitch</a></div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Ad Astra Community</div>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

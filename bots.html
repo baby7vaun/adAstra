@@ -1,63 +1,79 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Astra | Bots</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ad Astra — Bots</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header class="bot-header">
-        <nav class="navbar">
-            <h1 class="logo">Ad Astra</h1>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="community.html">Community</a></li>
-                <li><a href="events.html">Events</a></li>
-                <li><a href="bots.html" class="highlight">Bots</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+  <div id="discord-widget" class="discord-floating">
+    <iframe src="https://discord.com/widget?id=1349234105300156469&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  </div>
 
+  <nav class="navbar small">
+    <div class="brand"><span class="brand-accent">AD</span>ASTRA</div>
+    <ul class="nav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bots.html" class="highlight">Bots</a></li>
+      <li><a href="live.html">Live</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="bot-main">
     <section class="bot-hero">
-        <div class="bot-hero-content">
-            <img src="https://cdn-icons-png.flaticon.com/512/4712/4712100.png" alt="AstraCore Logo" class="bot-logo">
-            <h2>AstraCore</h2>
-            <p>Your all-in-one music and moderation bot for Ad Astra.</p>
-            <a href="https://dsc.gg/egogang" class="invite-btn">Invite to Server</a>
+      <div class="bot-hero-inner">
+        <img src="assets/astracore-placeholder.png" alt="AstraCore Logo" class="bot-logo">
+        <h1>AstraCore</h1>
+        <p class="tagline">Your all-in-one music and moderation bot for Ad Astra.</p>
+        <div class="bot-ctas">
+          <a class="btn" href="#" id="invite-astracore">Invite AstraCore</a>
+          <a class="btn outline" href="#" id="docs-astracore">Documentation</a>
         </div>
+      </div>
     </section>
 
-    <section class="bot-showcase">
-        <div class="bot-card">
-            <h3>Core Features</h3>
-            <ul>
-                <li>🎵 High-quality music streaming</li>
-                <li>🛠️ Auto-moderation and role management</li>
-                <li>📢 Scheduled announcements</li>
-                <li>🤖 Custom AI responses</li>
-                <li>🎮 Game integrations and leaderboards</li>
-            </ul>
-        </div>
+    <section class="bot-showcase-grid">
+      <div class="bot-panel">
+        <h2>Core Features</h2>
+        <ul>
+          <li>🎵 High-quality music streaming (Lavalink)</li>
+          <li>🛡️ Auto-moderation, warns, bans, and role tools</li>
+          <li>📣 Scheduled announcements & welcome messages</li>
+          <li>🤖 Custom AI command responses</li>
+          <li>📊 Leaderboards & game integrations</li>
+        </ul>
+      </div>
 
-        <div class="bot-card">
-            <h3>Technical Overview</h3>
-            <p><strong>Built With:</strong> Node.js + Discord.js</p>
-            <p><strong>Audio Engine:</strong> Lavalink Integration</p>
-            <p><strong>Version:</strong> 1.2.0</p>
-            <p><strong>Uptime:</strong> 99.9%</p>
-            <p><strong>Developer:</strong> Baby Vaun</p>
-            <div class="bot-links">
-                <a href="https://dsc.gg/egogang" class="secondary-btn">Join Discord</a>
-                <a href="#" class="secondary-btn">Docs</a>
-            </div>
+      <div class="bot-panel tech">
+        <h2>Technical Overview</h2>
+        <p><strong>Stack:</strong> Node.js, Discord.js, Lavalink</p>
+        <p><strong>Version:</strong> 1.2.0</p>
+        <p><strong>Uptime:</strong> 99.9%</p>
+        <p><strong>Maintainer:</strong> Baby Vaun</p>
+        <div class="bot-links">
+          <a class="btn outline" href="#">Support</a>
+          <a class="btn" href="https://dsc.gg/egogang">Join Server</a>
         </div>
+      </div>
     </section>
 
-    <footer>
-        <p>© 2025 Ad Astra Community | All Rights Reserved</p>
-    </footer>
+    <section class="bot-commands">
+      <h2>Top Commands</h2>
+      <div class="cmd-grid">
+        <div class="cmd"><code>/play &lt;url or query&gt;</code><span>Play music</span></div>
+        <div class="cmd"><code>/skip</code><span>Skip current track</span></div>
+        <div class="cmd"><code>/ban &lt;user&gt; &lt;reason&gt;</code><span>Ban a user</span></div>
+        <div class="cmd"><code>/warn &lt;user&gt;</code><span>Issue warn</span></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>© 2025 Ad Astra Community</div>
+  </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
