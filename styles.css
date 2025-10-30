@@ -1,0 +1,47 @@
+/* Custom styles for Ad Astra prototype */
+/* Glass effect, buttons, cards, and responsive tweaks */
+
+:root{
+  --glass: rgba(255,255,255,0.03);
+  --glass-border: rgba(255,255,255,0.04);
+}
+
+.btn-primary{
+  @apply bg-gradient-to-r from-[#0FF0FC] to-[#C300FF] text-black px-4 py-2 rounded-md font-semibold shadow-lg;
+}
+.btn-cta{
+  @apply bg-gradient-to-r from-[#0FF0FC] to-[#C300FF] text-black px-4 py-3 rounded-md font-bold shadow-lg transform hover:-translate-y-0.5 transition;
+}
+.btn-outline{
+  @apply border border-white/10 px-4 py-2 rounded-md text-sm opacity-95;
+}
+.btn-sm{
+  @apply bg-[#111827] px-3 py-1 rounded-md text-sm font-medium;
+}
+
+.nav-link{
+  @apply px-3 py-2 hover:text-[#0FF0FC] transition;
+}
+
+.glass{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border: 1px solid var(--glass-border);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 6px 20px rgba(12,15,26,0.6);
+}
+
+/* Cards */
+.card{
+  @apply p-4 rounded-lg bg-[#0B1020]/40 border border-white/4;
+}
+.card-title{
+  @apply font-bold;
+}
+.card-text{
+  @apply text-sm opacity-90 mt-2;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px){
+  .btn-primary{ @apply px-3 py-2 text-sm; }
+}
